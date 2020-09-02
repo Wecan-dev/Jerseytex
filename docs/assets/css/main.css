@@ -239,6 +239,12 @@ body {
   cursor: pointer;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-banner__content .slick-prev {
+    left: 37%;
+  }
+}
+
 .main-banner__content .slick-prev:before {
   font-size: 14px;
   color: #eada27;
@@ -260,6 +266,12 @@ body {
   transition: all .5s;
   top: 91%;
   right: 42%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-banner__content .slick-next {
+    right: 37%;
+  }
 }
 
 .main-banner__content .slick-next:before {
@@ -325,24 +337,6 @@ body {
   transition: all 300ms ease;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .main-banner__content .slick-dots {
-    left: 45%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .main-banner__content .slick-dots {
-    left: 45%;
-  }
-}
-
-@media (min-width: 0px) and (max-width: 767px) {
-  .main-banner__content .slick-dots {
-    left: 35%;
-  }
-}
-
 .main-banner__content .slick-dots li {
   margin: 0 10px;
 }
@@ -358,6 +352,12 @@ body {
   left: 42%;
   transition: all .5s;
   cursor: pointer;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-blog__carousel .slick-prev {
+    left: 38%;
+  }
 }
 
 .main-blog__carousel .slick-prev:before {
@@ -382,6 +382,12 @@ body {
   bottom: -94px;
   right: 42%;
   top: auto;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-blog__carousel .slick-next {
+    right: 38%;
+  }
 }
 
 .main-blog__carousel .slick-next:before {
@@ -463,6 +469,20 @@ body {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-products__carousel .slick-prev {
+    left: 40%;
+    transform: translateX(-40%);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-products__carousel .slick-prev {
+    left: 45%;
+    transform: translateX(-45%);
+  }
+}
+
 .main-products__carousel .slick-prev:before {
   font-size: 14px;
   color: #eada27;
@@ -497,6 +517,20 @@ body {
   .main-products__carousel .slick-next {
     right: 35%;
     transform: translateX(-35%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-products__carousel .slick-next {
+    right: 40%;
+    transform: translateX(-40%);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-products__carousel .slick-next {
+    right: 45%;
+    transform: translateX(-45%);
   }
 }
 
@@ -622,6 +656,13 @@ body :focus {
   .padding-right-left {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .padding-right-left {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -1049,6 +1090,12 @@ header {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-video .main-video__cover {
+    height: 100%;
+  }
+}
+
 .main-video .main-video__mask {
   position: absolute;
   top: 0;
@@ -1349,6 +1396,13 @@ header {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-blog .main-blog__text {
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+}
+
 .main-blog .main-blog__metadata {
   font-size: 15px;
   font-weight: bold;
@@ -1381,6 +1435,12 @@ header {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .main-blog .main-blog__metadata {
+    left: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
   .main-blog .main-blog__metadata {
     left: 20px;
   }
@@ -1463,6 +1523,18 @@ header {
 
 .main-materials .main-materials__item:last-child {
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-materials .main-materials__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-materials .main-materials__item {
+    margin-bottom: 40px;
+  }
 }
 
 .main-materials .main-materials__counter {
@@ -1610,6 +1682,12 @@ header {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-instagram .container-grid {
+    grid-template-columns: 100%;
+  }
+}
+
 .main-instagram .main-instagram__titlexs {
   font-size: 12px;
   font-weight: bold;
@@ -1635,6 +1713,13 @@ header {
 
 .main-instagram .padding-right-left {
   padding-right: 28px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-instagram .padding-right-left {
+    padding-right: 28px;
+    padding-left: 20px;
+  }
 }
 
 .main-instagram .main-instagram__item--flex {
