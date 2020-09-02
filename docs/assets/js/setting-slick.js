@@ -86,19 +86,21 @@ $('.main-blog__carousel').slick({
 });
 
 
-$('.about-team__carousel').slick({
+$('.main-products__carousel').slick({
   infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 4,
+  slidesToScroll: 1,
   dots: false,
   arrows: true,
+  variableWidth: true,
   responsive: [{
-    breakpoint: 1200,
+    breakpoint: 600,
     settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: 1,
+      // slidesToScroll: 3,
       infinite: true,
-      arrows: true,
+      variableWidth: false,
+      // arrows: true,
     }
   }]
 });

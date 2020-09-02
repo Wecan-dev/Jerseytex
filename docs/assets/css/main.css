@@ -447,6 +447,79 @@ body {
   transition: all 300ms ease;
 }
 
+.main-products__carousel .slick-prev {
+  z-index: 99;
+  top: -56px;
+  left: 47%;
+  transition: all .5s;
+  transform: translateX(-47%);
+  cursor: pointer;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-products__carousel .slick-prev {
+    left: 35%;
+    transform: translateX(-35%);
+  }
+}
+
+.main-products__carousel .slick-prev:before {
+  font-size: 14px;
+  color: #eada27;
+  content: "";
+  background-image: url("../img/left.png");
+  z-index: 3;
+  opacity: 1;
+  display: block;
+  background-size: contain;
+  width: 43px;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.main-products__carousel .slick-prev:hover {
+  outline: none;
+  transition: all .5s;
+  background: #000;
+  color: #fff;
+}
+
+.main-products__carousel .slick-next {
+  z-index: 99;
+  cursor: pointer;
+  transition: all .5s;
+  top: -56px;
+  right: 47%;
+  transform: translateX(-47%);
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-products__carousel .slick-next {
+    right: 35%;
+    transform: translateX(-35%);
+  }
+}
+
+.main-products__carousel .slick-next:before {
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 100%;
+  font-size: 14px;
+  color: #eada27;
+  content: "";
+  opacity: 1;
+  display: block;
+  background-image: url("../img/right.png");
+  background-size: contain;
+}
+
+.main-products__carousel .slick-next:hover {
+  outline: none;
+  background: #000;
+  color: #fff;
+  transition: all .5s;
+}
+
 html {
   font-size: 14px;
   scroll-behavior: smooth;
@@ -1524,4 +1597,152 @@ header {
   line-height: normal;
   letter-spacing: 1.87px;
   color: #ffffff;
+}
+
+.main-instagram .container-grid {
+  gap: 35px;
+  grid-template-columns: 16% 1fr 35% 1fr;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-instagram .container-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+.main-instagram .main-instagram__titlexs {
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #efe427;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-instagram .main-instagram__titlexs span {
+  width: 16px;
+  height: 2px;
+  margin-right: 14px;
+  background: #efe427;
+  display: block;
+  background: #efe427;
+  position: initial;
+}
+
+.main-instagram .padding-right-left {
+  padding-right: 28px;
+}
+
+.main-instagram .main-instagram__item--flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main-instagram .main-instagram__item--flex:nth-child(2) {
+  align-items: flex-end;
+}
+
+.main-instagram .main-instagram__item--flex:nth-child(2) .main-instagram__imglg {
+  margin-top: 49px;
+}
+
+.main-instagram .main-instagram__text {
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.08;
+  letter-spacing: 5.25px;
+  color: #fff;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.main-instagram .main-instagram__text span {
+  color: #efe427;
+}
+
+.main-instagram .main-instagram__button {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding: 22px 17px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.main-instagram .main-instagram__button span {
+  position: absolute;
+  background: #efe427;
+}
+
+.main-instagram .main-instagram__button .main-instagram__button--span1 {
+  width: 76px;
+  top: 0;
+  right: 17px;
+  height: 2px;
+}
+
+.main-instagram .main-instagram__button .main-instagram__button--span2 {
+  width: 2px;
+  height: 23px;
+  right: 0;
+  bottom: 3px;
+}
+
+.main-instagram .main-instagram__button .main-instagram__button--span3 {
+  width: 43px;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+}
+
+.main-instagram .main-instagram__button .main-instagram__button--span4 {
+  width: 2px;
+  left: 0;
+  top: 0;
+  height: 16px;
+}
+
+.main-instagram .main-instagram__imglg {
+  width: 100%;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-products {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.main-products .main-general__title {
+  margin-bottom: 77px;
+}
+
+.main-products .main-products__item {
+  display: flex !important;
+  align-items: center;
+  height: 624px;
+  margin-right: 15px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-products .main-products__item {
+    height: auto;
+    margin: 0;
+  }
+}
+
+.main-products .main-products__item img {
+  width: 100%;
 }
