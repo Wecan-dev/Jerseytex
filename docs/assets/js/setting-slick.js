@@ -77,6 +77,12 @@ $('.main-blog__carousel').slick({
   slidesToScroll: 1,
   dots: true,
   arrows: true,
+  responsive: [{
+    breakpoint: 600,
+    settings: {
+      arrows: false,
+    }
+  }]
 });
 
 
@@ -87,32 +93,14 @@ $('.about-team__carousel').slick({
   dots: false,
   arrows: true,
   responsive: [{
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        arrows: true,
-      }
-    },
-    {
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        // autoplay: true,
-        autoplaySpeed: 1000,
-      }
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      infinite: true,
+      arrows: true,
     }
-  ]
+  }]
 });
 
 
@@ -197,6 +185,12 @@ $('.main-benefits__carousel').slick({
   slidesToScroll: 1,
   dots: false,
   arrows: true,
+  responsive: [{
+    breakpoint: 600,
+    settings: {
+      arrows: false,
+    }
+  }]
 })
 
 
