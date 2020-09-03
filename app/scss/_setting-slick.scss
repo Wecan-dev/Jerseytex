@@ -100,7 +100,7 @@
       letter-spacing: normal;
       color: #ffffff;
       cursor: pointer;
-      font-family: 'AkzidenzGrotesk';
+      font-family: $bold;
 
       content: counter(item, decimal-leading-zero) " ";
       counter-increment: item;
@@ -242,7 +242,7 @@
       letter-spacing: normal;
       color: #ffffff;
       cursor: pointer;
-      font-family: 'AkzidenzGrotesk';
+      font-family: $bold;
 
       content: counter(item, decimal-leading-zero) " ";
       counter-increment: item;

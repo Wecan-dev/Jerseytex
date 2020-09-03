@@ -19,40 +19,22 @@ html {
 }
 
 @font-face {
-  font-family: 'AkzidenzGrotesk';
-  src:
-    url('../fonts/AkzidenzGrotesk-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'AkzidenzGrotesk';
-  src:
-    url('../fonts/AkzidenzGrotesk-Light.woff') format('woff');
+  font-family: 'Akzidenz-Grotesk Expert BQ';
+  src: url('../fonts/AkzidenzGroteskExpertBQ-LightOsF.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'AkzidenzGrotesk';
-  src:
-    url('../fonts/AkzidenzGrotesk-Bold.woff') format('woff');
+  font-family: 'Akzidenz-Grotesk BQ';
+  src: url('../fonts/AkzidenzGroteskBQ-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'AkzidenzGrotesk';
-  src:
-    url('../fonts/AkzidenzGrotesk-Roman.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+
 
 a:hover {
   color: #ffffff;
@@ -75,7 +57,7 @@ a:hover {
 }
 
 body {
-  font-family: 'AkzidenzGrotesk';
+  font-family: 'Akzidenz-Grotesk Expert BQ';
   background-color: #000000;
   color: $gray;
 
@@ -117,6 +99,7 @@ body {
 .main-general__button {
   font-size: 14px;
   font-weight: bold;
+  font-family: 'Akzidenz-Grotesk BQ';
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -156,6 +139,7 @@ body {
 .main-general__titlexs {
   font-size: 20px;
   font-weight: bold;
+  font-family: 'Akzidenz-Grotesk BQ';
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -172,6 +156,7 @@ body {
   margin-bottom: 37px;
   text-align: center;
   font-weight: bold;
+  font-family: 'Akzidenz-Grotesk BQ';
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -191,6 +176,7 @@ body {
 .main-button {
   font-size: 15px;
   font-weight: bold;
+  font-family: 'Akzidenz-Grotesk BQ';
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -290,6 +276,7 @@ button:focus {
     align-items: center;
     font-size: 12px;
     font-weight: bold;
+    font-family: 'Akzidenz-Grotesk BQ';
     font-stretch: normal;
     font-style: normal;
     text-transform: uppercase;
@@ -497,6 +484,7 @@ header {
     font-size: 12px;
     transform: rotate(-90deg);
     font-weight: bold;
+    font-family: 'Akzidenz-Grotesk BQ';
     font-stretch: normal;
     margin: 30px 0;
     font-style: normal;
@@ -855,6 +843,7 @@ header {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Akzidenz-Grotesk BQ';
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
@@ -907,6 +896,7 @@ header {
   .main-blog__metadata {
     font-size: 15px;
     font-weight: bold;
+    font-family: 'Akzidenz-Grotesk BQ';
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -1078,6 +1068,7 @@ header {
       a {
         font-size: 14px;
         font-weight: bold;
+        font-family: 'Akzidenz-Grotesk BQ';
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
@@ -1130,6 +1121,7 @@ header {
     background: transparent;
     font-size: 14px;
     font-weight: bold;
+    font-family: 'Akzidenz-Grotesk BQ';
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -1147,6 +1139,7 @@ header {
       font-size: 14px;
       text-transform: uppercase;
       font-weight: bold;
+      font-family: 'Akzidenz-Grotesk BQ';
       font-stretch: normal;
       font-style: normal;
       line-height: normal;
@@ -1174,6 +1167,7 @@ header {
   .main-instagram__titlexs {
     font-size: 12px;
     font-weight: bold;
+    font-family: 'Akzidenz-Grotesk BQ';
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -1222,6 +1216,7 @@ header {
   .main-instagram__text {
     font-size: 48px;
     font-weight: bold;
+    font-family: 'Akzidenz-Grotesk BQ';
     font-stretch: normal;
     font-style: normal;
     line-height: 1.08;
@@ -1239,14 +1234,16 @@ header {
   .main-instagram__button {
     font-size: 14px;
     font-weight: bold;
+    font-family: 'Akzidenz-Grotesk BQ';
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: #ffffff;
-    padding: 22px 17px;
+    padding: 22px 11px;
     position: relative;
     text-transform: uppercase;
+    display: block;
 
     span {
       position: absolute;
@@ -1349,6 +1346,7 @@ header {
   .main-metrics__title {
     font-size: 15px;
     font-weight: bold;
+    font-family: 'Akzidenz-Grotesk BQ';
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
