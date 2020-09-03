@@ -1,0 +1,401 @@
+!!!
+%html{ lang: 'en' }
+  %head
+    %meta{ charset: 'UTF-8' }/
+    %meta{ content: 'width=device-width, initial-scale=1.0', name:'viewport' }/
+    %title Jerseytex
+    %link{:crossorigin => "anonymous", :href => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", :integrity => "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", :rel => "stylesheet"}/
+    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/slick-theme.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/slick.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/main.css' }/
+    %link{ rel: 'stylesheet', href:'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css' }/
+    %link{:href => "assets/img/favicon.png", :rel => "shortcut icon"}/
+    %link{ href:'https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Poppins:100,200,300,400,500,600,700,800,900&display=swap',  rel:'stylesheet' }/
+  %body
+    %header.fixed-top.navbar-fixed-js      
+      %nav.navbar.navbar-expand-lg
+        .container
+          .main-brand__top
+            .main-brand
+              %a.navbar-brand{ :href => 'index.html' }
+                %img#iso{ :src => 'assets/img/logo.png', :alt=>"Logo Jerseytex"}/ 
+          .main-brand__fixed
+            .main-brand
+              %a.navbar-brand{ :href => 'index.html' }
+                %img#iso{ :src => 'assets/img/logo.png', :alt=>"Logo Jerseytex" }/ 
+          .main-brand.brand-responsive
+            %a.navbar-brand{ :href => 'index.html' }
+              %img#iso{ :src => 'assets/img/logo.png', :alt=>"Logo Jerseytex"}/ 
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{ 'data-toggle' => 'offcanvas', :type => 'button' }
+              %span.hamburger-box
+              %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item
+                %a.nav-link.nav-link-p{:href => '',:data-toggle => 'offcanvas' } 
+                  Quiénes Somos
+              %li.nav-item
+                %a.nav-link.nav-link-p{:href => '',:data-toggle => 'offcanvas' } 
+                  Productos
+              %li.nav-item
+                %a.nav-link.nav-link-p{:href => '',:data-toggle => 'offcanvas' } 
+                  Servicios
+              %li.nav-item
+                %a.nav-link.nav-link-p{:href => '',:data-toggle => 'offcanvas' } 
+                  Inspiración & Moda
+              %li.nav-item
+                %a.nav-link.nav-link-p{:href => '',:data-toggle => 'offcanvas' } 
+                  Compras 
+              %li.nav-item
+                %a.nav-link.nav-link-p{:href => '',:data-toggle => 'offcanvas' } 
+                  Blog
+              %li.nav-item
+                %a.nav-link.nav-link-p{:href => '',:data-toggle => 'offcanvas' } 
+                  Contacto 
+              %li.nav-item
+                %a.nav-link.nav-link-p{:href => '',:data-toggle => 'offcanvas' } 
+                  %img{:src=>"assets/img/shape_2.png"}/             
+              %li.nav-item
+                %a.nav-link.nav-link-p{:href => '',:data-toggle => 'offcanvas' } 
+                  %img{:src=>"assets/img/shape.png"}/             
+                       
+    %section.main-banner
+      %ul.main-banner__list
+        %li
+          %a{:href=>''}
+            YT
+        %li
+          %a{:href=>''}
+            Fc
+        %li
+          %a{:href=>''}
+            In
+      .main-banner__content
+        .main-banner__item
+          .main-banner__text.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;"}
+            %img{:src=>"assets/img/banner-text.png"}/             
+            %a.main-general__button{:href=>''}Contáctanos
+          .main-banner__img
+            %img{:src=>"assets/img/banner.png", :alt=>"Imagen Banner"}/
+        .main-banner__item
+          .main-banner__text.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;"}
+            %img{:src=>"assets/img/banner-text.png"}/             
+            %a.main-general__button{:href=>''}Contáctanos
+          .main-banner__img
+            %img{:src=>"assets/img/banner.png", :alt=>"Imagen Banner"}/    
+        .main-banner__item
+          .main-banner__text.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;"}
+            %img{:src=>"assets/img/banner-text.png"}/             
+            %a.main-general__button{:href=>''}Contáctanos
+          .main-banner__img
+            %img{:src=>"assets/img/banner.png", :alt=>"Imagen Banner"}/   
+    %section.main-about 
+      .padding-top-bottom.padding-right-left
+        %h2.main-general__titlexs
+          Sobre
+        %h2.main-general__title
+          Nosotros
+    %section.main-metrics
+      .padding-right-left
+        .container-grid
+          .main-metrics__item
+            %img{:src=>"assets/img/sewing-machine.png"}/     
+            .main-metrics__text
+              %h2.main-metrics__counter 
+                300
+              %h2.main-metrics__title 
+                Projects
+          .main-metrics__item
+            %img{:src=>"assets/img/write.png"}/     
+            .main-metrics__text
+              %h2.main-metrics__counter 
+                250
+              %h2.main-metrics__title 
+                contractors
+          .main-metrics__item
+            %img{:src=>"assets/img/person.png"}/     
+            .main-metrics__text
+              %h2.main-metrics__counter 
+                80
+              %h2.main-metrics__title 
+                employeers
+          .main-metrics__item
+            %img{:src=>"assets/img/trust.png"}/     
+            .main-metrics__text
+              %h2.main-metrics__counter 
+                150
+              %h2.main-metrics__title 
+                clients
+    %section.main-products 
+      .padding-top-bottom
+        %h2.main-general__titlexs
+          Nuestros
+        %h2.main-general__title
+          Productos  
+        .main-products__carousel
+          .main-products__item
+            %img{:src=>"assets/img/image_12.png"}/     
+          .main-products__item
+            %img{:src=>"assets/img/image_13.png"}/            
+          .main-products__item
+            %img{:src=>"assets/img/image_14.png"}/  
+          .main-products__item
+            %img{:src=>"assets/img/image_15.png"}/  
+          .main-products__item
+            %img{:src=>"assets/img/image_12.png"}/  
+    %section.main-video
+      %img.main-video__cover{:src=>"assets/img/video.png"}/     
+      .main-video__mask
+        %img{:src=>"assets/img/play_2.png"}/     
+    .main-materials 
+      .padding-top-bottom
+        .main-materials__abs
+          %h2.main-general__titlexs
+            Nuestros
+          %h2.main-general__title
+            Materiales
+        .container-grid
+          .main-materials__img
+            %img{:src=>"assets/img/image_10.png"}/     
+          .main-materials__text
+            .main-materials__item
+              %p.main-materials__counter 01
+              .main-materials__description
+                %p.main-general__description
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                %a.main-button{:href=>''}
+                  %span
+                  Ver más
+            .main-materials__item
+              %p.main-materials__counter 02
+              .main-materials__description
+                %p.main-general__description
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                %a.main-button{:href=>''}
+                  %span
+                  Ver más
+            .main-materials__item
+              %p.main-materials__counter 03
+              .main-materials__description
+                %p.main-general__description
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                %a.main-button{:href=>''}
+                  %span
+                  Ver más
+                  
+    .main-blog 
+      .padding-top-bottom.padding-right-left
+        %h2.main-general__titlexs
+          Nuestro
+        %h2.main-general__title
+          Blog
+        .main-blog__carousel
+          .main-blog__item 
+            .main-blog__img
+              %img{:src=>"assets/img/bitmap.png"}/     
+            .main-blog__text
+              .main-blog__metadata
+                %p.main-blog__date
+                  %img{:src=>"assets/img/calendar.png"}/     
+                  07/19
+                %p.main-blog__tag
+                  %img{:src=>"assets/img/tag.png"}/     
+                  Moda + Diseño
+
+              %p.main-blog__number
+                01
+              %h2.main-blog__title
+                Las tendencias más importantes en Moda
+              %p.main-blog__description
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.
+              %a.main-button{:href=>''}
+                %span
+                Ver más
+          .main-blog__item 
+            .main-blog__img
+              %img{:src=>"assets/img/bitmap.png"}/     
+            .main-blog__text
+              .main-blog__metadata
+                %p.main-blog__date
+                  %img{:src=>"assets/img/calendar.png"}/     
+                  07/19
+                %p.main-blog__tag
+                  %img{:src=>"assets/img/tag.png"}/     
+                  Moda + Diseño
+
+              %p.main-blog__number
+                01
+              %h2.main-blog__title
+                Las tendencias más importantes en Moda
+              %p.main-blog__description
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.
+              %a.main-button{:href=>''}
+                %span
+                Ver más              
+          .main-blog__item 
+            .main-blog__img
+              %img{:src=>"assets/img/bitmap.png"}/     
+            .main-blog__text
+              .main-blog__metadata
+                %p.main-blog__date
+                  %img{:src=>"assets/img/calendar.png"}/     
+                  07/19
+                %p.main-blog__tag
+                  %img{:src=>"assets/img/tag.png"}/     
+                  Moda + Diseño
+
+              %p.main-blog__number
+                01
+              %h2.main-blog__title
+                Las tendencias más importantes en Moda
+              %p.main-blog__description
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.
+              %a.main-button{:href=>''}
+                %span
+                Ver más
+    %section.main-instagram
+      .padding-top-bottom.padding-right-left
+        .container-grid
+          .main-instagram__item
+            %p.main-instagram__titlexs
+              %span
+              LOREMIP SUMLOREM
+            %h2.main-instagram__text
+              lorem  ipsum 
+              %span
+                rem 
+              a texl 
+              %span
+                ipsu 
+              ore
+            %a.main-instagram__button{:href=>''}
+              Siguenos @jerseytex
+              %span.main-instagram__button--span1
+              %span.main-instagram__button--span2
+              %span.main-instagram__button--span3
+              %span.main-instagram__button--span4
+          .main-instagram__item.main-instagram__item--flex
+            %img.main-instagram__imglg{:src=>"assets/img/image_3.png"}/    
+            %img{:src=>"assets/img/image_7.png"}/     
+          .main-instagram__item
+            %img.main-instagram__imglg{:src=>"assets/img/image.png"}/    
+          .main-instagram__item.main-instagram__item--flex
+            %img{:src=>"assets/img/instagram_2.png"}/             
+            %img.main-instagram__imglg{:src=>"assets/img/image_5.png"}/    
+    %section.main-subscription
+      .padding-right-left.padding-top-bottom
+        %h2.main-subscription__title
+          Suscríbete para tener las últimas actualizaciones 
+        .main-subscription__tab
+          %ul#myTab.nav.nav-tabs{:role => "tablist"}
+            %li.nav-item
+              %a#home-tab.nav-link.active{"aria-controls" => "home", "aria-selected" => "true", "data-toggle" => "tab", :href => "#home", :role => "tab"} Proveedor
+            %li.nav-item
+              %a#profile-tab.nav-link{"aria-controls" => "profile", "aria-selected" => "false", "data-toggle" => "tab", :href => "#profile", :role => "tab"} Cliente
+
+          #myTabContent.tab-content
+            #home.tab-pane.fade.show.active{"aria-labelledby" => "home-tab", :role => "tabpanel"}
+              %form
+                %input{:type=>"email", :placeholder=>"Correo electrónico" }/
+                %a.main-general__button.main-general__button--yellow{:href=>''}Suscribirse
+            #profile.tab-pane.fade{"aria-labelledby" => "profile-tab", :role => "tabpanel"}
+              %form
+                %input{:type=>"email", :placeholder=>"Correo electrónico" }/
+                %a.main-general__button.main-general__button--yellow{:href=>''}Suscribirse
+
+    %footer.main-footer
+      .container.padding-top-bottom
+        .container-grid
+          .main-footer__item
+            .main-footer__logo
+              %img{:src=>"assets/img/logo-2.png" }/
+            %p.main-footer__description
+              Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor      
+            .main-footer__rrss
+              %a.rrss__item{:href=>"", :target=>"_blank"}
+                %img{:src=>"assets/img/instagram.png" }/
+              %a.rrss__item{:href=>"", :target=>"_blank"}
+                %img{:src=>"assets/img/facebook.png" }/
+                                 
+              %a.rrss__item{:href=>"", :target=>"_blank"}
+                %img{:src=>"assets/img/youtube.png" }/
+                 
+          .main-footer__item
+            %h2.main-footer__title
+              Menú 
+            %ul.site-map
+              %li
+                %a{:href=>""}
+                  Quiénes Somos 
+              %li
+                %a{:href=>""}
+                  Productos 
+              %li
+                %a{:href=>""}
+                  Servicios
+              %li.main-footer__terms-conditions
+                %a{:href=>""} 
+                  Términos y condiciones
+          .main-footer__item
+            %ul.site-map
+              %li
+                %a{:href=>""}
+                  Blog 
+              %li
+                %a{:href=>""}
+                  Inspiración y Moda
+              %li
+                %a{:href=>""}
+                  Compras
+              %li
+                %a{:href=>""}
+                  Contacto 
+              %li.main-footer__terms-conditions
+                %a{:href=>""}
+                  Políticas de privacidad  
+          .main-footer__item
+            %h2.main-footer__title
+              Contacto
+            %ul.list-contact
+
+              %li
+                %a{:href=>"mailto:info@Jerseytex.co"}
+                  Correo electrónico
+                  info@jerseytex.com.co
+              %li
+                %a{:href=>"tel:5744443569"}
+                  Teléfono
+                  +57 3456778
+              %li
+                %a{:href=>""}
+                  Dirección
+                  Calle 60 #70-124 Las Palmas
+                  Medellín
+
+            
+    
+    -# %a#js_up.boton-subir.slider-top{:href => "#"}
+    -#   %img{:src=>"assets/img/button@3x.png", :alt=>"icon chat"}
+
+
+    .main-powered
+      .container 
+        .d-flex.justify-content-center.p-4.main-powered__flex
+          %p Copyright © 2020 
+          %a{:href=>"https://sigma.la/"} Sigma Studios 
+          %p - Sitios Web
+    .main-whatsapp
+      %a{ :href=>" "}
+        %img{:src=>"assets/img/whatsapp@3x.png", :alt=>"icon chat"}
+
+    %script{src: 'assets/js/jquery.min.js' }
+    %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"}
+    %script{src: 'assets/js/slick.min.js' }
+    %script{src: 'assets/js/setting-slick.js' }
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js' }
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js' }
+    %script{src: 'assets/js/main.js' }
+

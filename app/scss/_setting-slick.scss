@@ -1,0 +1,352 @@
+.main-banner__content {
+  .slick-prev {
+    z-index: 99;
+
+    top: 91%;
+    left: 42%;
+    transition: all .5s;
+
+    cursor: pointer;
+
+    @include respond-to(sm) {
+      left: 37%;
+    }
+
+    &:before {
+      font-size: 14px;
+      color: #eada27;
+      content: "\f053";
+      font-family: 'FontAwesome';
+      z-index: 3;
+    }
+
+    &:hover {
+      outline: none;
+      transition: all .5s;
+      background: $black;
+      color: $white;
+    }
+  }
+
+  .slick-next {
+    z-index: 99;
+    cursor: pointer;
+    transition: all .5s;
+    top: 91%;
+    right: 42%;
+
+    @include respond-to(sm) {
+      right: 37%;
+    }
+
+
+    &:before {
+      font-size: 14px;
+      color: #eada27;
+      content: "\f054";
+      font-family: 'FontAwesome';
+    }
+
+    &:hover {
+      outline: none;
+      background: $black;
+      color: $white;
+      transition: all .5s;
+
+    }
+  }
+
+  .slick-dots {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    bottom: 7%;
+    right: initial;
+    left: 0%;
+    width: 100%;
+    counter-reset: item;
+    justify-content: center;
+    list-style: decimal-leading-zero;
+    list-style-type: decimal-leading-zero;
+
+    li {
+      border-bottom: solid 1.5px #797979;
+      margin: 0 !important;
+      width: 41px;
+      height: 27px;
+    }
+
+    button {
+      width: 41px;
+
+    }
+
+    .slick-active {
+
+      border-bottom: solid 1.5px #eada27;
+    }
+
+
+    li button::before {
+      content: '';
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: normal;
+      width: 41px;
+      margin-bottom: 6px;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      cursor: pointer;
+      font-family: 'AkzidenzGrotesk';
+
+      content: counter(item, decimal-leading-zero) " ";
+      counter-increment: item;
+      opacity: 1;
+      transition: all 300ms ease;
+
+    }
+
+
+
+    .slick-active {
+      button {
+        &:before {
+          // color: $dots-color-active;
+          // opacity: 0.75;
+          // width: 35px;
+          // margin: 0;
+        }
+      }
+    }
+
+    li {
+      margin: 0 10px;
+
+      button {
+
+        &:before {
+
+          transition: all 300ms ease;
+        }
+
+
+      }
+    }
+  }
+}
+
+.main-blog__carousel {
+  .slick-prev {
+    z-index: 99;
+    top: auto;
+    bottom: -94px;
+    left: 42%;
+    transition: all .5s;
+
+    @include respond-to(md) {
+      left: 38%;
+
+    }
+
+    cursor: pointer;
+
+    &:before {
+      font-size: 14px;
+      color: #eada27;
+      content: "\f053";
+      font-family: 'FontAwesome';
+      z-index: 3;
+    }
+
+    &:hover {
+      outline: none;
+      transition: all .5s;
+      background: $black;
+      color: $white;
+    }
+  }
+
+  .slick-next {
+    z-index: 99;
+    cursor: pointer;
+    transition: all .5s;
+    bottom: -94px;
+    right: 42%;
+    top: auto;
+
+    @include respond-to(md) {
+      right: 38%;
+
+    }
+
+    &:before {
+      font-size: 14px;
+      color: #eada27;
+      content: "\f054";
+      font-family: 'FontAwesome';
+    }
+
+    &:hover {
+      outline: none;
+      background: $black;
+      color: $white;
+      transition: all .5s;
+
+    }
+  }
+
+  .slick-dots {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    bottom: -94px;
+    right: initial;
+    left: 0%;
+    width: 100%;
+    counter-reset: item;
+    justify-content: center;
+    list-style: decimal-leading-zero;
+    list-style-type: decimal-leading-zero;
+
+    li {
+      border-bottom: solid 1.5px #797979;
+      margin: 0 !important;
+      width: 41px;
+      height: 27px;
+    }
+
+    button {
+      width: 41px;
+
+    }
+
+    .slick-active {
+
+      border-bottom: solid 1.5px #eada27;
+    }
+
+
+    li button::before {
+      content: '';
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: normal;
+      width: 41px;
+      margin-bottom: 6px;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      cursor: pointer;
+      font-family: 'AkzidenzGrotesk';
+
+      content: counter(item, decimal-leading-zero) " ";
+      counter-increment: item;
+      opacity: 1;
+      transition: all 300ms ease;
+
+    }
+
+  }
+}
+
+.main-products__carousel {
+  .slick-prev {
+    z-index: 99;
+    top: -56px;
+    left: 47%;
+    transition: all .5s;
+    transform: translateX(-47%);
+    cursor: pointer;
+
+    @include respond-to(xs) {
+      left: 35%;
+      transform: translateX(-35%);
+    }
+
+
+    @include respond-to(sm) {
+      left: 40%;
+      transform: translateX(-40%);
+    }
+
+    @include respond-to(md) {
+      left: 45%;
+      transform: translateX(-45%);
+    }
+
+    &:before {
+      font-size: 14px;
+      color: #eada27;
+      content: "";
+      background-image: url('../img/left.png'); // font-family: 'FontAwesome';
+      z-index: 3;
+      opacity: 1;
+      display: block;
+      background-size: contain;
+      width: 43px;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      outline: none;
+      transition: all .5s;
+      background: $black;
+      color: $white;
+    }
+  }
+
+  .slick-next {
+    z-index: 99;
+    cursor: pointer;
+    transition: all .5s;
+    top: -56px;
+    right: 47%;
+    transform: translateX(-47%);
+
+    @include respond-to(xs) {
+      right: 35%;
+      transform: translateX(-35%);
+
+    }
+
+    @include respond-to(sm) {
+      right: 40%;
+      transform: translateX(-40%);
+
+    }
+
+    @include respond-to(md) {
+      right: 45%;
+      transform: translateX(-45%);
+
+    }
+
+    &:before {
+      background-repeat: no-repeat;
+
+      width: 43px;
+      height: 100%;
+      font-size: 14px;
+      color: #eada27;
+      content: "";
+      opacity: 1;
+      display: block;
+      background-image: url('../img/right.png');
+      background-size: contain;
+    }
+
+    &:hover {
+      outline: none;
+      background: $black;
+      color: $white;
+      transition: all .5s;
+
+    }
+  }
+}
