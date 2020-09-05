@@ -341,12 +341,232 @@
       background-size: contain;
     }
 
-    &:hover {
-      outline: none;
-      background: $black;
-      color: $white;
-      transition: all .5s;
+  }
+}
+
+.main-about__tab {
+  .slick-dots {
+    top: -59px;
+    bottom: inherit;
+    display: flex;
+    justify-content: center;
+
+    .slick-active {
+      border-bottom: 1px solid $yellow;
+      bottom: 0;
 
     }
   }
+
+  .slick-dots li {
+    width: 73px;
+    height: fit-content;
+    padding-bottom: 6px;
+    opacity: 1;
+  }
+
+  .slick-dots li button {
+    top: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .slick-dots li button:before {
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .slick-dots li::before {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    font-family: $bold;
+    text-transform: uppercase;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #ffffff;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+  }
+
+
+
+  .slick-dots li:nth-child(1) {
+    &::before {
+      content: "All";
+    }
+  }
+
+  .slick-dots li:nth-child(2) {
+    &::before {
+
+      content: "lorem im";
+    }
+  }
+
+  .slick-dots li:nth-child(3) {
+    &::before {
+
+      content: "lore";
+    }
+  }
+
+  .slick-dots li:nth-child(4) {
+    &::before {
+
+      content: "lorem";
+    }
+  }
+
+  .slick-dots li:nth-child(5) {
+    &::before {
+
+      content: "lorem";
+    }
+  }
+}
+
+
+.main-about__carousel {
+  .slick-prev {
+    z-index: 99;
+
+    transition: all .5s;
+    cursor: pointer;
+    right: 18%;
+    top: 9px;
+
+    @include respond-to(xs) {
+      top: inherit;
+      bottom: -18px;
+      right: 37%;
+    }
+
+
+
+    &:before {
+      font-size: 14px;
+      color: #eada27;
+      content: "";
+      background-image: url('../img/left.png'); // font-family: 'FontAwesome';
+      z-index: 3;
+      opacity: 1;
+      display: block;
+      background-size: contain;
+      width: 43px;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      outline: none;
+      transition: all .5s;
+      background: $black;
+      color: $white;
+    }
+  }
+
+  .slick-next {
+    z-index: 99;
+    cursor: pointer;
+    transition: all .5s;
+
+    top: 9px;
+    right: 11%;
+
+    @include respond-to(xs) {
+      top: inherit;
+      bottom: -18px;
+    }
+
+    &:before {
+      background-repeat: no-repeat;
+
+      width: 43px;
+      height: 100%;
+      font-size: 14px;
+      color: #eada27;
+      content: "";
+      opacity: 1;
+      display: block;
+      background-image: url('../img/right.png');
+      background-size: contain;
+    }
+  }
+
+
+}
+
+
+.main-about__carousel .slick-dots {
+  li.slick-active {
+    overflow: visible;
+    visibility: visible;
+    border-bottom: none;
+    bottom: initial;
+    left: 0;
+    transform: translate(0);
+    top: -40px;
+
+    &::after {
+      width: 1px;
+      height: 30px;
+      content: "";
+      background: #efe427;
+      transform: rotateZ(43deg);
+      bottom: -66px;
+      position: absolute;
+      right: -18px;
+    }
+  }
+
+  z-index: 2;
+  display: flex;
+  counter-reset: item;
+  top: 192px;
+  list-style: decimal-leading-zero;
+  // top: -48px;
+  list-style-type: decimal-leading-zero;
+
+  li::before {
+    content: counter(item, decimal-leading-zero) " " !important;
+    counter-increment: item;
+    opacity: 1;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 300;
+    font-family: 'Akzidenz-Grotesk Expert BQ';
+
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    // background: #fff;
+  }
+
+  li {
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+
+  li:last-child {
+    overflow: visible;
+    visibility: visible;
+    left: 124px;
+    bottom: -63px;
+
+    &:after {
+      display: none !important;
+    }
+  }
+
 }

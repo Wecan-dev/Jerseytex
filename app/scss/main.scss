@@ -147,7 +147,7 @@ body {
   text-transform: uppercase;
   color: #efe427;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 0;
 }
 
 .main-general__title {
@@ -946,6 +946,19 @@ header {
 }
 
 .main-materials {
+  position: relative;
+
+  .padding-top-bottom {
+    padding-top: 199px;
+  }
+
+  .main-materials__bg {
+    right: 0;
+    z-index: -1;
+    // width: 100%;
+    top: 3px;
+  }
+
   .main-materials__abs {
     position: absolute;
     padding-top: 83px;
@@ -1285,6 +1298,7 @@ header {
 }
 
 .main-products {
+  .main-products__bg {}
 
   @include respond-to(xs) {
     padding-right: 20px;
@@ -1315,6 +1329,12 @@ header {
 .main-metrics {
   .container-grid {
     grid-template-columns: repeat(4, 1fr);
+
+    @include respond-to(xs) {
+      grid-template-columns: 100%;
+      gap: 28px;
+    }
+
     // gap: 80px;
   }
 
@@ -1323,14 +1343,45 @@ header {
     align-items: center;
     justify-content: center;
 
+
+    @include respond-to(xs) {
+      flex-direction: column;
+    }
+
+    @include respond-to(sm) {
+      flex-direction: column;
+    }
+
     img {
       padding-right: 22px;
       border-right: 1px solid #eada27;
+
+      @include respond-to(xs) {
+
+        padding: 0;
+        border: none;
+      }
+
+      @include respond-to(sm) {
+
+        padding: 0;
+        border: none;
+      }
     }
   }
 
   .main-metrics__text {
     padding-left: 22px;
+
+    @include respond-to(xs) {
+      padding: 0;
+      text-align: center;
+    }
+
+    @include respond-to(sm) {
+      padding: 0;
+      text-align: center;
+    }
   }
 
   .main-metrics__counter {
@@ -1354,4 +1405,77 @@ header {
     color: #eada27;
     text-transform: uppercase;
   }
+}
+
+.main-about {
+  position: relative;
+
+  .padding-right-left {
+    padding-left: 77px;
+    padding-right: 77px;
+
+    @include respond-to(xs) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+  }
+
+  .main-general__title {
+    margin-bottom: 84px;
+  }
+}
+
+.main-about__carousel {
+
+  .container-grid {
+    grid-template-columns: 76% 1fr;
+    gap: 32px;
+
+    @include respond-to(xs) {
+      grid-template-columns: 100%;
+      padding-bottom: 40px;
+    }
+
+  }
+
+  .main-about__img {
+    padding-left: 239px;
+
+    @include respond-to(xs) {
+      padding-left: 0;
+    }
+
+    @include respond-to(sm) {
+      padding-left: 0;
+    }
+
+    @include respond-to(md) {
+      padding-left: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .main-about__text {
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    font-family: $bold;
+    padding-top: 37px;
+  }
+}
+
+.main-general__bg {
+  position: absolute;
+}
+
+.main-about__bg {
+  top: 189px;
 }
