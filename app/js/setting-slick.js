@@ -102,19 +102,19 @@ $('.main-about__carousel').slick({
 
 
 
-$('.main-gallery__carousel').slick({
+$('.general-banner__carousel').slick({
   slidesToShow: 1,
   speed: 500,
+
   fade: true,
   // cssEase: 'linear',
   slidesToScroll: 1,
-  dots: false,
-  arrows: true,
+  dots: true,
+  arrows: false,
   responsive: [{
       breakpoint: 1200,
       settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
+
         infinite: true,
         dots: true,
       }
@@ -122,15 +122,12 @@ $('.main-gallery__carousel').slick({
     {
       breakpoint: 900,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+
       }
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
         dots: false,
         autoplaySpeed: 1000,
       }
@@ -152,6 +149,8 @@ $('.main-blog__carousel').slick({
   }]
 });
 
+
+
 $('.main-products__carousel').slick({
   infinite: true,
   slidesToShow: 4,
@@ -169,4 +168,39 @@ $('.main-products__carousel').slick({
       // arrows: true,
     }
   }]
+});
+
+
+$('.about-team__carousel').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 3,
+  dots: true,
+  arrows: true,
+  responsive: [{
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+
+      }
+    }
+  ]
 });

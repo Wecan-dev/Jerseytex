@@ -60,37 +60,43 @@
               %li.nav-item
                 %a.nav-link.nav-link-p{:href => '',:data-toggle => 'offcanvas' } 
                   %img{:src=>"assets/img/shape.png"}/             
-                       
-    %section.main-banner
-      %ul.main-banner__list
-        %li
-          %a{:href=>''}
-            YT
-        %li
-          %a{:href=>''}
-            Fc
-        %li
-          %a{:href=>''}
-            In
-      .main-banner__content
-        .main-banner__item
-          .main-banner__text.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;"}
-            %img{:src=>"assets/img/banner-text.png"}/             
-            %a.main-general__button{:href=>''}Contáctanos
-          .main-banner__img
-            %img{:src=>"assets/img/banner.png", :alt=>"Imagen Banner"}/
-        .main-banner__item
-          .main-banner__text.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;"}
-            %img{:src=>"assets/img/banner-text.png"}/             
-            %a.main-general__button{:href=>''}Contáctanos
-          .main-banner__img
-            %img{:src=>"assets/img/banner.png", :alt=>"Imagen Banner"}/    
-        .main-banner__item
-          .main-banner__text.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;"}
-            %img{:src=>"assets/img/banner-text.png"}/             
-            %a.main-general__button{:href=>''}Contáctanos
-          .main-banner__img
-            %img{:src=>"assets/img/banner.png", :alt=>"Imagen Banner"}/   
+    %section.general-banner__carousel
+      .general-banner__item
+        %img.general-banner__img{:src=>"assets/img/about/banner.png"}/
+        .general-banner__mask
+          %p.banner-general__titlexs
+            %span
+            LOREMIP SUMLOREM
+          %h2.banner-general__title
+            Quienes
+            %br/
+            Somos
+          %a.general-banner__button{:href=>''}
+            Contáctanos
+      .general-banner__item
+        %img.general-banner__img{:src=>"assets/img/about/banner.png"}/
+        .general-banner__mask
+          %p.banner-general__titlexs
+            %span
+            LOREMIP SUMLOREM
+          %h2.banner-general__title
+            Quienes 
+            %br/
+            Somos
+          %a.general-banner__button{:href=>''}
+            Contáctanos 
+      .general-banner__item
+        %img.general-banner__img{:src=>"assets/img/about/banner.png"}/
+        .general-banner__mask
+          %p.banner-general__titlexs
+            %span
+            LOREMIP SUMLOREM
+          %h2.banner-general__title
+            Quienes 
+            %br/
+            Somos
+          %a.general-banner__button{:href=>''}
+            Contáctanos     
     %section.main-about 
       %img.main-about__bg.main-general__bg{:src=>"assets/img/bg-1.png"}/   
       .padding-top-bottom.padding-right-left
@@ -276,186 +282,69 @@
                 150
               %h2.main-metrics__title 
                 clients
-    %section.main-products 
-    
+    %section.about-team
       .padding-top-bottom
-        %h2.main-general__titlexs
-          Nuestros
-        %h2.main-general__title
-          Productos  
-                    
-        .main-products__carousel
-          .main-products__item
-            %img{:src=>"assets/img/image_12.png"}/     
-          .main-products__item
-            %img{:src=>"assets/img/image_13.png"}/            
-          .main-products__item
-            %img{:src=>"assets/img/image_14.png"}/  
-          .main-products__item
-            %img{:src=>"assets/img/image_15.png"}/  
-          .main-products__item
-            %img{:src=>"assets/img/image_12.png"}/  
-    %section.main-video
-      %img.main-video__cover{:src=>"assets/img/video.png"}/     
-      .main-video__mask
-        %img{:src=>"assets/img/play_2.png"}/     
-    .main-materials 
-      %img.main-materials__bg.main-general__bg{:src=>"assets/img/bg-2.png"}/   
-      .padding-top-bottom
-        .main-materials__abs
-          %h2.main-general__titlexs
-            Nuestros
-          %h2.main-general__title
-            Materiales
-        .container-grid
-          .main-materials__img
-            %img{:src=>"assets/img/image_10.png"}/     
-          .main-materials__text
-            .main-materials__item
-              %p.main-materials__counter 01
-              .main-materials__description
-                %p.main-general__description
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                %a.main-button{:href=>''}
-                  %span
-                  Ver más
-            .main-materials__item
-              %p.main-materials__counter 02
-              .main-materials__description
-                %p.main-general__description
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                %a.main-button{:href=>''}
-                  %span
-                  Ver más
-            .main-materials__item
-              %p.main-materials__counter 03
-              .main-materials__description
-                %p.main-general__description
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                %a.main-button{:href=>''}
-                  %span
-                  Ver más
-                  
-    .main-blog 
-      .padding-top-bottom.padding-right-left
         %h2.main-general__titlexs
           Nuestro
         %h2.main-general__title
-          Blog
-        .main-blog__carousel
-          .main-blog__item 
-            .main-blog__img
-              %img{:src=>"assets/img/bitmap.png"}/     
-            .main-blog__text
-              .main-blog__metadata
-                %p.main-blog__date
-                  %img{:src=>"assets/img/calendar.png"}/     
-                  07/19
-                %p.main-blog__tag
-                  %img{:src=>"assets/img/tag.png"}/     
-                  Moda + Diseño
-
-              %p.main-blog__number
-                01
-              %h2.main-blog__title
-                Las tendencias más importantes en Moda
-              %p.main-blog__description
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.
-              %a.main-button{:href=>''}
-                %span
-                Ver más
-          .main-blog__item 
-            .main-blog__img
-              %img{:src=>"assets/img/bitmap.png"}/     
-            .main-blog__text
-              .main-blog__metadata
-                %p.main-blog__date
-                  %img{:src=>"assets/img/calendar.png"}/     
-                  07/19
-                %p.main-blog__tag
-                  %img{:src=>"assets/img/tag.png"}/     
-                  Moda + Diseño
-
-              %p.main-blog__number
-                02
-              %h2.main-blog__title
-                Las tendencias más importantes en Moda
-              %p.main-blog__description
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.
-              %a.main-button{:href=>''}
-                %span
-                Ver más              
-          .main-blog__item 
-            .main-blog__img
-              %img{:src=>"assets/img/bitmap.png"}/     
-            .main-blog__text
-              .main-blog__metadata
-                %p.main-blog__date
-                  %img{:src=>"assets/img/calendar.png"}/     
-                  07/19
-                %p.main-blog__tag
-                  %img{:src=>"assets/img/tag.png"}/     
-                  Moda + Diseño
-
-              %p.main-blog__number
-                03
-              %h2.main-blog__title
-                Las tendencias más importantes en Moda
-              %p.main-blog__description
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.
-              %a.main-button{:href=>''}
-                %span
-                Ver más
-    %section.main-instagram
-      .padding-top-bottom.padding-right-left
-        .container-grid
-          .main-instagram__item
-            %p.main-instagram__titlexs
-              %span
-              LOREMIP SUMLOREM
-            %h2.main-instagram__text
-              lorem  ipsum 
-              %span
-                rem 
-              a texl 
-              %span
-                ipsu 
-              ore
-            %a.main-instagram__button{:href=>''}
-              Siguenos @jerseytex
-              %span.main-instagram__button--span1
-              %span.main-instagram__button--span2
-              %span.main-instagram__button--span3
-              %span.main-instagram__button--span4
-          .main-instagram__item.main-instagram__item--flex
-            %img.main-instagram__imglg{:src=>"assets/img/image_3.png"}/    
-            %img{:src=>"assets/img/image_7.png"}/     
-          .main-instagram__item
-            %img.main-instagram__imglg{:src=>"assets/img/image.png"}/    
-          .main-instagram__item.main-instagram__item--flex
-            %img{:src=>"assets/img/instagram_2.png"}/             
-            %img.main-instagram__imglg{:src=>"assets/img/image_5.png"}/    
-    %section.main-subscription
-      .padding-right-left.padding-top-bottom
-        %h2.main-subscription__title
-          Suscríbete para tener las últimas actualizaciones 
-        .main-subscription__tab
-          %ul#myTab.nav.nav-tabs{:role => "tablist"}
-            %li.nav-item
-              %a#home-tab.nav-link.active{"aria-controls" => "home", "aria-selected" => "true", "data-toggle" => "tab", :href => "#home", :role => "tab"} Proveedor
-            %li.nav-item
-              %a#profile-tab.nav-link{"aria-controls" => "profile", "aria-selected" => "false", "data-toggle" => "tab", :href => "#profile", :role => "tab"} Cliente
-
-          #myTabContent.tab-content
-            #home.tab-pane.fade.show.active{"aria-labelledby" => "home-tab", :role => "tabpanel"}
-              %form
-                %input{:type=>"email", :placeholder=>"Correo electrónico" }/
-                %a.main-general__button.main-general__button--yellow{:href=>''}Suscribirse
-            #profile.tab-pane.fade{"aria-labelledby" => "profile-tab", :role => "tabpanel"}
-              %form
-                %input{:type=>"email", :placeholder=>"Correo electrónico" }/
-                %a.main-general__button.main-general__button--yellow{:href=>''}Suscribirse
-
+          Equipo
+        .about-team__carousel
+          .about-team__item
+            .about-team__img
+              %img{:src=>"assets/img/about/team.png"}/     
+            .about-team__body
+              %h2.about-team__name
+                Lorem ipsum      
+              %p.about-team__ocupation 
+                Lorem     
+          .about-team__item
+            .about-team__img
+              %img{:src=>"assets/img/about/team.png"}/     
+            .about-team__body
+              %h2.about-team__name
+                Lorem ipsum      
+              %p.about-team__ocupation 
+                Lorem      
+          .about-team__item
+            .about-team__img
+              %img{:src=>"assets/img/about/team.png"}/     
+            .about-team__body
+              %h2.about-team__name
+                Lorem ipsum      
+              %p.about-team__ocupation 
+                Lorem      
+          .about-team__item
+            .about-team__img
+              %img{:src=>"assets/img/about/team.png"}/     
+            .about-team__body
+              %h2.about-team__name
+                Lorem ipsum      
+              %p.about-team__ocupation 
+                Lorem     
+          .about-team__item
+            .about-team__img
+              %img{:src=>"assets/img/about/team.png"}/     
+            .about-team__body
+              %h2.about-team__name
+                Lorem ipsum      
+              %p.about-team__ocupation 
+                Lorem     
+          .about-team__item
+            .about-team__img
+              %img{:src=>"assets/img/about/team.png"}/     
+            .about-team__body
+              %h2.about-team__name
+                Lorem ipsum      
+              %p.about-team__ocupation 
+                Lorem     
+          .about-team__item
+            .about-team__img
+              %img{:src=>"assets/img/about/team.png"}/     
+            .about-team__body
+              %h2.about-team__name
+                Lorem ipsum      
+              %p.about-team__ocupation 
+                Lorem                                                                                                   
     %footer.main-footer
       .container.padding-top-bottom
         .container-grid
@@ -463,7 +352,7 @@
             .main-footer__logo
               %img{:src=>"assets/img/logo-2.png" }/
             %p.main-footer__description
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor      
+            Quienespsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor      
             .main-footer__rrss
               %a.rrss__item{:href=>"", :target=>"_blank"}
                 %img{:src=>"assets/img/instagram.png" }/
@@ -504,7 +393,7 @@
                 %a{:href=>""}
                   Contacto 
               %li.main-footer__terms-conditions
-                %a{:href=>"politicas-de-privacidad.html"}
+                %a{:href=>"politicas-de-privacidad.html"} 
                   Políticas de privacidad  
           .main-footer__item
             %h2.main-footer__title
@@ -550,3 +439,4 @@
     %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js' }
     %script{src: 'assets/js/main.js' }
 
+                      

@@ -743,6 +743,163 @@ body {
   display: none !important;
 }
 
+.general-banner__carousel .slick-dots {
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  bottom: 44px;
+  right: initial;
+  left: 119px;
+  width: 100%;
+  counter-reset: item;
+  justify-content: start;
+  list-style: decimal-leading-zero;
+  list-style-type: decimal-leading-zero;
+}
+
+.general-banner__carousel .slick-dots li {
+  border-bottom: solid 1.5px #797979;
+  margin: 0 !important;
+  width: 41px;
+  height: 27px;
+}
+
+.general-banner__carousel .slick-dots button {
+  width: 41px;
+}
+
+.general-banner__carousel .slick-dots .slick-active {
+  border-bottom: solid 1.5px #eada27;
+}
+
+.general-banner__carousel .slick-dots li button::before {
+  content: '';
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  width: 41px;
+  margin-bottom: 6px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Akzidenz-Grotesk BQ";
+  content: counter(item, decimal-leading-zero) " ";
+  counter-increment: item;
+  opacity: 1;
+  transition: all 300ms ease;
+}
+
+.about-team__carousel .slick-prev {
+  z-index: 99;
+  top: auto;
+  bottom: -72px;
+  left: 42%;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-team__carousel .slick-prev {
+    left: 38%;
+  }
+}
+
+.about-team__carousel .slick-prev:before {
+  font-size: 14px;
+  color: #eada27;
+  content: "\f053";
+  font-family: 'FontAwesome';
+  z-index: 3;
+}
+
+.about-team__carousel .slick-prev:hover {
+  outline: none;
+  transition: all .5s;
+  background: #000;
+  color: #fff;
+}
+
+.about-team__carousel .slick-next {
+  z-index: 99;
+  cursor: pointer;
+  transition: all .5s;
+  bottom: -72px;
+  right: 42%;
+  top: auto;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-team__carousel .slick-next {
+    right: 38%;
+  }
+}
+
+.about-team__carousel .slick-next:before {
+  font-size: 14px;
+  color: #eada27;
+  content: "\f054";
+  font-family: 'FontAwesome';
+}
+
+.about-team__carousel .slick-next:hover {
+  outline: none;
+  background: #000;
+  color: #fff;
+  transition: all .5s;
+}
+
+.about-team__carousel .slick-dots {
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  bottom: -64px;
+  right: initial;
+  left: 0%;
+  width: 100%;
+  counter-reset: item;
+  justify-content: center;
+  list-style: decimal-leading-zero;
+  list-style-type: decimal-leading-zero;
+}
+
+.about-team__carousel .slick-dots li {
+  border-bottom: solid 1.5px #797979;
+  margin: 0 !important;
+  width: 41px;
+  height: 27px;
+}
+
+.about-team__carousel .slick-dots button {
+  width: 41px;
+}
+
+.about-team__carousel .slick-dots .slick-active {
+  border-bottom: solid 1.5px #eada27;
+}
+
+.about-team__carousel .slick-dots li button::before {
+  content: '';
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  width: 41px;
+  margin-bottom: 6px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Akzidenz-Grotesk BQ";
+  content: counter(item, decimal-leading-zero) " ";
+  counter-increment: item;
+  opacity: 1;
+  transition: all 300ms ease;
+}
+
 html {
   font-size: 14px;
   scroll-behavior: smooth;
@@ -2239,4 +2396,168 @@ header {
 
 .main-about__bg {
   top: 189px;
+}
+
+.polices .polices-item {
+  margin-bottom: 71px;
+}
+
+.polices .main-general__title {
+  margin-bottom: 66px;
+}
+
+.polices .main-general__description {
+  letter-spacing: 0.52px;
+  text-align: justify;
+}
+
+.polices .polices-item__title {
+  font-size: 38px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: normal;
+  margin-bottom: 52px;
+  letter-spacing: normal;
+  color: #ffffff;
+  font-family: "Akzidenz-Grotesk BQ";
+}
+
+.polices .polices-item__title span {
+  font-family: 'Akzidenz-Grotesk Expert BQ';
+  font-weight: 300;
+  font-size: 60px;
+}
+
+.general-banner__small {
+  position: relative;
+}
+
+.general-banner__img {
+  height: 530px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.general-banner__mask {
+  padding-left: 110px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: linear-gradient(to top, #000000 6%, rgba(0, 0, 0, 0.91) 38%, rgba(0, 0, 0, 0.56) 63%, rgba(0, 0, 0, 0.24) 75%);
+}
+
+.general-banner__button {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  font-family: "Akzidenz-Grotesk BQ";
+  padding: 3px 33px;
+  text-transform: uppercase;
+  border-right: 1px solid #efe427;
+  border-left: 1px solid #efe427;
+}
+
+.banner-general__titlexs {
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #efe427;
+  font-family: "Akzidenz-Grotesk BQ";
+  position: relative;
+  display: flex;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.banner-general__titlexs span {
+  width: 16px;
+  height: 2px;
+  margin-right: 14px;
+  background: #efe427;
+  display: block;
+  background: #efe427;
+  position: initial;
+}
+
+.banner-general__title {
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  font-family: "Akzidenz-Grotesk BQ";
+  text-transform: uppercase;
+  margin-bottom: 54px;
+}
+
+.general-banner__carousel .general-banner__img {
+  height: 720px;
+  filter: grayscale(1);
+}
+
+.about-team .main-general__title {
+  margin-bottom: 75px;
+}
+
+.about-team__img {
+  height: 290px;
+}
+
+.about-team__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-team__item {
+  border: solid 1px #cbc222;
+  box-sizing: border-box;
+}
+
+.about-team__item .about-team__body {
+  padding: 29px 5px;
+}
+
+.about-team__item .about-team__name {
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  color: #eada27;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Akzidenz-Grotesk BQ";
+}
+
+.about-team__item .about-team__ocupation {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  margin: 0;
+  font-family: "Akzidenz-Grotesk BQ";
+  text-transform: uppercase;
 }
