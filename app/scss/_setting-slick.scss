@@ -578,17 +578,21 @@
     position: absolute;
     bottom: 44px;
     right: initial;
-    left: 119px;
+    left: 134px;
     width: 100%;
     counter-reset: item;
     justify-content: start;
     list-style: decimal-leading-zero;
     list-style-type: decimal-leading-zero;
 
+    @include respond-to(xs) {
+      left: 33px;
+    }
+
     li {
       border-bottom: solid 1.5px #797979;
       margin: 0 !important;
-      width: 41px;
+      width: 52px;
       height: 27px;
     }
 
@@ -606,10 +610,10 @@
     li button::before {
       content: '';
       display: inline-block;
-      font-size: 20px;
+      font-size: 12px;
       font-weight: bold;
       font-stretch: normal;
-      width: 41px;
+      width: 52px;
       margin-bottom: 6px;
       font-style: normal;
       line-height: normal;
@@ -625,6 +629,58 @@
 
     }
 
+  }
+
+  .slick-prev {
+    z-index: 99;
+    top: auto;
+    bottom: 44px;
+    left: 95px;
+    transition: all .5s;
+
+
+    cursor: pointer;
+
+    &:before {
+      font-size: 12px;
+      color: #eada27;
+      content: "\f053";
+      font-family: 'FontAwesome';
+      z-index: 3;
+    }
+
+    &:hover {
+      outline: none;
+      transition: all .5s;
+      background: $black;
+      color: $white;
+    }
+  }
+
+  .slick-next {
+    z-index: 99;
+    cursor: pointer;
+    transition: all .5s;
+    bottom: 44px;
+    left: 310px;
+    top: auto;
+
+
+
+    &:before {
+      font-size: 12px;
+      color: #eada27;
+      content: "\f054";
+      font-family: 'FontAwesome';
+    }
+
+    &:hover {
+      outline: none;
+      background: $black;
+      color: $white;
+      transition: all .5s;
+
+    }
   }
 }
 

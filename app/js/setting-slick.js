@@ -110,7 +110,7 @@ $('.general-banner__carousel').slick({
   // cssEase: 'linear',
   slidesToScroll: 1,
   dots: true,
-  arrows: false,
+  arrows: true,
   responsive: [{
       breakpoint: 1200,
       settings: {
@@ -128,7 +128,7 @@ $('.general-banner__carousel').slick({
     {
       breakpoint: 600,
       settings: {
-        dots: false,
+        arrows: false,
         autoplaySpeed: 1000,
       }
     }
