@@ -2134,6 +2134,11 @@ header {
   color: #ffffff;
 }
 
+.main-subscription .main-general__button--yellow i {
+  margin-left: 14px;
+  font-size: 15px;
+}
+
 .main-instagram .container-grid {
   gap: 35px;
   grid-template-columns: 16% 1fr 35% 1fr;
