@@ -1732,6 +1732,22 @@ header {
   .padding-right-left {
     padding-right: 108px;
     padding-right: 108px;
+
+    @include respond-to(xs) {
+      padding-right: 20px;
+      padding-right: 20px;
+    }
+
+    @include respond-to(sm) {
+      padding-right: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .about-value__img {
+    img {
+      width: 100%;
+    }
   }
 
   .about-value__titlexs {
@@ -1762,6 +1778,20 @@ header {
 
   .about-value__text {
     padding-right: 239px;
+
+    @include respond-to(xs) {
+      padding-right: 0;
+    }
+
+    @include respond-to(sm) {
+      padding-right: 0;
+    }
+
+
+    @include respond-to(md) {
+      padding-right: 179px;
+    }
+
   }
 
   .about-value__title {
@@ -1786,6 +1816,21 @@ header {
   .container-grid {
     gap: 102px;
     grid-template-columns: 37% 1fr;
+
+    @include respond-to(xs) {
+      grid-template-columns: 100%;
+
+    }
+
+    @include respond-to(sm) {
+
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @include respond-to(md) {
+      gap: 20px;
+    }
 
   }
 

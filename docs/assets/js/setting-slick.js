@@ -230,9 +230,9 @@ $('.about-value__carousel').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 800,
       settings: {
-        arrows: false,
+        dots: false,
         autoplaySpeed: 1000,
       }
     }

@@ -812,6 +812,11 @@
     top: inherit;
     bottom: -38px;
 
+    @include respond-to(xs) {
+      left: 0;
+      bottom: -67px;
+    }
+
     &:before {
       font-size: 14px;
       color: #eada27;
@@ -841,6 +846,11 @@
     top: inherit;
     bottom: -38px;
     left: 204px;
+
+    @include respond-to(xs) {
+      left: 91px;
+      bottom: -67px;
+    }
 
 
     &:before {
@@ -878,6 +888,7 @@
     left: initial;
     top: 0;
     bottom: initial;
+
 
     button {
 

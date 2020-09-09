@@ -962,6 +962,13 @@ body {
   bottom: -38px;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .about-value__carousel .slick-prev {
+    left: 0;
+    bottom: -67px;
+  }
+}
+
 .about-value__carousel .slick-prev:before {
   font-size: 14px;
   color: #eada27;
@@ -990,6 +997,13 @@ body {
   top: inherit;
   bottom: -38px;
   left: 204px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .about-value__carousel .slick-next {
+    left: 91px;
+    bottom: -67px;
+  }
 }
 
 .about-value__carousel .slick-next:before {
@@ -2814,6 +2828,24 @@ header {
   padding-right: 108px;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .about-value .padding-right-left {
+    padding-right: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-value .padding-right-left {
+    padding-right: 40px;
+    padding-right: 40px;
+  }
+}
+
+.about-value .about-value__img img {
+  width: 100%;
+}
+
 .about-value .about-value__titlexs {
   font-size: 15px;
   font-weight: bold;
@@ -2843,6 +2875,24 @@ header {
   padding-right: 239px;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .about-value .about-value__text {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-value .about-value__text {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-value .about-value__text {
+    padding-right: 179px;
+  }
+}
+
 .about-value .about-value__title {
   font-size: 38px;
   font-weight: bold;
@@ -2864,6 +2914,25 @@ header {
 .about-value .container-grid {
   gap: 102px;
   grid-template-columns: 37% 1fr;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .about-value .container-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-value .container-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-value .container-grid {
+    gap: 20px;
+  }
 }
 
 .about-value .main-general__description {
