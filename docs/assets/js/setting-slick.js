@@ -204,3 +204,37 @@ $('.about-team__carousel').slick({
     }
   ]
 });
+
+
+$('.about-value__carousel').slick({
+  slidesToShow: 1,
+  speed: 500,
+
+  fade: true,
+  // cssEase: 'linear',
+  slidesToScroll: 1,
+  dots: true,
+  arrows: true,
+  responsive: [{
+      breakpoint: 1200,
+      settings: {
+
+        infinite: true,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        arrows: false,
+        autoplaySpeed: 1000,
+      }
+    }
+  ]
+});

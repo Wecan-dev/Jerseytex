@@ -799,3 +799,142 @@
 
   }
 }
+
+
+
+.about-value__carousel {
+  .slick-prev {
+    z-index: 99;
+    left: 151px;
+    transition: all .5s;
+    cursor: pointer;
+
+    top: inherit;
+    bottom: -38px;
+
+    &:before {
+      font-size: 14px;
+      color: #eada27;
+      content: "";
+      background-image: url('../img/left.png'); // font-family: 'FontAwesome';
+      z-index: 3;
+      opacity: 1;
+      display: block;
+      background-size: contain;
+      width: 43px;
+      height: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      outline: none;
+      transition: all .5s;
+      background: $black;
+      color: $white;
+    }
+  }
+
+  .slick-next {
+    z-index: 99;
+    cursor: pointer;
+    transition: all .5s;
+    top: inherit;
+    bottom: -38px;
+    left: 204px;
+
+
+    &:before {
+      background-repeat: no-repeat;
+
+      width: 43px;
+      height: 100%;
+      font-size: 14px;
+      color: #eada27;
+      content: "";
+      opacity: 1;
+      display: block;
+      background-image: url('../img/right.png');
+      background-size: contain;
+    }
+
+  }
+
+  .slick-dots {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    bottom: -64px;
+    right: initial;
+    left: 0%;
+    width: 100%;
+    counter-reset: item;
+    justify-content: center;
+    width: fit-content;
+    list-style: decimal-leading-zero;
+    list-style-type: decimal-leading-zero;
+    flex-direction: column;
+    width: fit-content;
+    right: 0;
+    left: initial;
+    top: 0;
+    bottom: initial;
+
+    button {
+
+      width: 100%;
+    }
+
+    li {
+      width: 100%;
+      margin-bottom: 47px;
+
+    }
+
+
+    li button::before {
+      content: '';
+      display: inline-block;
+      font-size: 14px;
+      font-stretch: normal;
+      width: 41px;
+      position: inherit;
+      margin-bottom: 6px;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      cursor: pointer;
+
+      content: counter(item, decimal-leading-zero) " ";
+      counter-increment: item;
+      opacity: 1;
+      transition: all 300ms ease;
+
+    }
+
+    li:nth-child(1) button::after {
+      content: "Valor Agregado";
+    }
+
+    .slick-active {
+      button::after {
+        color: $yellow;
+      }
+    }
+
+    li button::after {
+      content: "Lorem ipsum lore";
+      font-size: 15px;
+      position: inherit;
+      font-stretch: normal;
+      margin-bottom: 6px;
+      font-style: normal;
+      font-family: $bold;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+  }
+}
